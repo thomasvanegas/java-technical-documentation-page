@@ -1,0 +1,116 @@
+/* IMPORTACIÓN DE TIPOGRAFÍAS DESDE GOOGLE FONTS -> COMBINACIÓN: LIBRE FRANKLIN + LIBRE BASKERVILLE (CONTENT) */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Libre+Franklin:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+p,
+li,
+code {
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 25vw 73vw;
+}
+
+code {
+    display: block;
+    margin: 2vh 0 1vh 0;
+}
+
+
+/* ASIDE -> TITLE AND NAVBAR */
+#main-title {
+    font-family: 'Libre Franklin', sans-serif;
+    height: 10%;
+    margin: 2vh 0 1vh 0;
+    padding-top: 2vh;
+    text-align: center;
+    font-size: 4vh;
+}
+
+#navbar {
+    background-color: #C9D6DF;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.nav-link {
+    /* PROPIEDADES QUE SE LE APLICAN CUANDO ACTUA COMO FLEX-CONTAINER */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+
+    /* PROPIEDAD QUE SE APLICA CUANDO ESTÁ ACTUANDO COMOM FLEX-ITEM */
+    flex: 0 1 10%;
+
+    font-size: 3vh;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    background-color: #F0F5F9;
+}
+
+/* ASIDE END */
+
+
+/* MAIN -> DOCUMENTATION PAGE */
+#main-doc {
+    background-color: #F0F5F9;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-bottom: 0.4vh #C9D6DF solid;
+}
+
+.main-section header {
+    text-align: center;
+    margin: 2vh 0 1vh 0;
+}
+
+.content-section {
+    width: 80%;
+    text-align: justify;
+    margin-bottom: 5vh;
+}
+
+.content-section li {
+    margin-top: 2vh;
+}
+
+.reference-link {
+    color: #52616B;
+}
+
+.reference-link:hover {
+    color: #0D7377;
+    background-color: #DBE2EF;
+}
+
+/* MAIN END */
+
+/* MEDIA QUERIES -> MOBILE DEVICES */
+@media (max-width: 480px) {}
